@@ -12,38 +12,41 @@ td {
 }
 
 /* Primary row - base */
-.md-table .row-primary {
+.md-table .parent-primary td.cell-master {
   background-color: #fff;
 }
 
 /* Alternate row - base */
-.md-table tr.row-alternate {
+.md-table tr.parent-alternate td.cell-master {
   background-color: #eff1f3;
 }
 
 /* Primary row -  primary child */
-.md-table .row-primary .cell-primary {
+.md-table .parent-primary.child-primary td.cell-detail {
   background-color: rgb(238, 242, 243);
 }
 
 /* Primary row -  alternate child */
-.md-table .row-primary .cell-alternate {
+.md-table .parent-primary.child-alternate td.cell-detail {
   background-color: rgb(235, 238, 252);
 }
 
 /* Alternate row -  primary child */
-.md-table .row-alternate .cell-primary {
+.md-table .parent-alternate.child-primary td.cell-detail {
   background-color: rgb(245, 240, 211);
 }
 
 /* Alternate row -  alternate child */
-.md-table .row-alternate .cell-alternate {
+.md-table .parent-alternate.child-alternate td.cell-detail {
   background-color: rgb(233, 229, 206);
 }
 
-.md-table tr:hover,
-.md-table tr:hover .cell-primary,
-.md-table tr:hover .cell-alternate {
-  /* background-color: #ededed; */
+/* Primary row -  primary child */
+.md-table tr:hover.parent-primary td.cell-master,
+.md-table tr:hover.parent-alternate td.cell-master,
+.md-table tr:hover.parent-primary.child-primary td.cell-detail,
+.md-table tr:hover.parent-primary.child-alternate td.cell-detail,
+.md-table tr:hover.parent-alternate.child-primary td.cell-detail,
+.md-table tr:hover.parent-alternate.child-alternate td.cell-detail {
   filter: brightness(95%);
 }
