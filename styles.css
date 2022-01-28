@@ -1,0 +1,24 @@
+body {
+  background: orange;
+}
+
+td {
+  width: 100;
+  height: 100;
+}
+
+table {
+  background-color: #fff;
+}
+
+tr:hover {
+  background-color: red;
+}
+
+td:hover {
+  background-color: bisque;
+}
+
+.row-alternate {
+  background-color: rgb(226, 223, 223);
+}
