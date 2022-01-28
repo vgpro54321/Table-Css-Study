@@ -17,7 +17,7 @@ td {
 }
 
 /* Alternate row - base */
-.md-table .row-alternate {
+.md-table tr.row-alternate {
   background-color: #eff1f3;
 }
 
@@ -44,5 +44,6 @@ td {
 .md-table tr:hover,
 .md-table tr:hover .cell-primary,
 .md-table tr:hover .cell-alternate {
-  background-color: #ededed;
+  /* background-color: #ededed; */
+  filter: brightness(95%);
 }
