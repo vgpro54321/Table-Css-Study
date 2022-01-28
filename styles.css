@@ -7,39 +7,42 @@ td {
   height: 100;
 }
 
-table {
+.md-table {
   background-color: #fff;
 }
 
-tr:hover,
-tr:hover .cell-alternate {
-  background-color: rgb(158, 153, 153);
+/* Primary row - base */
+.md-table .row-primary {
+  background-color: #fff;
 }
 
-.row-primary {
-  background-color: rgb(202, 201, 243);
+/* Alternate row - base */
+.md-table .row-alternate {
+  background-color: #eff1f3;
 }
 
-.row-primary .cell-primary {
-  background-color: rgba(179, 178, 209, 0.705);
+/* Primary row -  primary child */
+.md-table .row-primary .cell-primary {
+  background-color: rgb(238, 242, 243);
 }
 
-.row-primary .cell-alternate {
-  background-color: rgb(109, 107, 219);
+/* Primary row -  alternate child */
+.md-table .row-primary .cell-alternate {
+  background-color: rgb(235, 238, 252);
 }
 
-.row-alternate {
-  background-color: rgb(202, 175, 175);
+/* Alternate row -  primary child */
+.md-table .row-alternate .cell-primary {
+  background-color: rgb(245, 240, 211);
 }
 
-.row-alternate .cell-primary {
-  background-color: rgba(209, 127, 182, 0.705);
+/* Alternate row -  alternate child */
+.md-table .row-alternate .cell-alternate {
+  background-color: rgb(233, 229, 206);
 }
 
-.row-alternate .cell-alternate {
-  background-color: rgb(233, 50, 50);
+.md-table tr:hover,
+.md-table tr:hover .cell-primary,
+.md-table tr:hover .cell-alternate {
+  background-color: #ededed;
 }
-
-/* :not(tr:hover td) .cell-alternate {
-  background-color: rgb(233, 211, 211);
-} */
