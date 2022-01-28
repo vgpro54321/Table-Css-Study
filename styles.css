@@ -11,14 +11,35 @@ table {
   background-color: #fff;
 }
 
-tr:hover {
-  background-color: red;
+tr:hover,
+tr:hover .cell-alternate {
+  background-color: rgb(158, 153, 153);
 }
 
-td:hover {
-  background-color: bisque;
+.row-primary {
+  background-color: rgb(202, 201, 243);
+}
+
+.row-primary .cell-primary {
+  background-color: rgba(179, 178, 209, 0.705);
+}
+
+.row-primary .cell-alternate {
+  background-color: rgb(109, 107, 219);
 }
 
 .row-alternate {
-  background-color: rgb(226, 223, 223);
+  background-color: rgb(202, 175, 175);
 }
+
+.row-alternate .cell-primary {
+  background-color: rgba(209, 127, 182, 0.705);
+}
+
+.row-alternate .cell-alternate {
+  background-color: rgb(233, 50, 50);
+}
+
+/* :not(tr:hover td) .cell-alternate {
+  background-color: rgb(233, 211, 211);
+} */
