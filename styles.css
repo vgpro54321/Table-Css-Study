@@ -23,12 +23,12 @@ td {
 
 /* Primary row -  primary child */
 .md-table .parent-primary.child-primary td.cell-detail {
-  background-color: rgb(234, 255, 225);
+  background-color: rgb(255, 251, 215);
 }
 
 /* Primary row -  alternate child */
 .md-table .parent-primary.child-alternate td.cell-detail {
-  background-color: rgb(217, 248, 203);
+  background-color: rgb(248, 242, 189);
 }
 
 /* Primary row -  alternate child */
